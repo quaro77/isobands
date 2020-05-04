@@ -25,11 +25,15 @@ Example sage:
 
 /* setup: */
 Isobands i = new Isobands();
+
 i.setMinLevel(0.0);
+
 i.setMaxLevel(70.0); // optional: if not present the maximum level is computed from data
+
 i.setStep(1.0);
 
 /* input file reading: */
+
 i.readCsv("c:/testdir/curve_levels.csv");
 	
 /* calculation */
@@ -37,8 +41,10 @@ i.calculateCurves();
 
 /* preview window */
 i.mirrorY(true);    // mirrors the Y in the preview plot
+
 i.draw();
 		
 /* export */
 i.exportCsv("c:/testdir/curve_output_isobands.csv");
+
 i.exportShp("c:/testdir/curve_output_isobands");  // avoid file extension; 3 files (.shp, .shx, .dbf) files will be created

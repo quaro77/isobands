@@ -3,7 +3,7 @@
 Java project for the creation of an isoband vectorial map starting from a NxM grid of values. Implements the marching squares algorithm
 https://en.wikipedia.org/wiki/Marching_squares
 
-![Screenshot](screenshot1.JPG)
+![Screenshot](screenshot2.JPG)
 
 Supports reading from .CSV file in the format:
 

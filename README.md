@@ -1,6 +1,6 @@
 # isobands
 
-Java project for the creation of an isoband vectorial map starting from a NxM grid of values. Implements the marching squares algorithm
+Java project for the creation of an isoband vectorial map starting from a grid of values. Implements the marching squares algorithm
 https://en.wikipedia.org/wiki/Marching_squares
 
 ![Screenshot](screenshot1.PNG)

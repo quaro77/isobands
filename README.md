@@ -24,6 +24,7 @@ Draws the map in a preview window and exports in .CSV format with WKT geometry (
 Example sage:
 
 /* setup: */
+
 Isobands i = new Isobands();
 
 i.setMinLevel(0.0);
@@ -37,14 +38,17 @@ i.setStep(1.0);
 i.readCsv("c:/testdir/curve_levels.csv");
 	
 /* calculation */
+
 i.calculateCurves();
 
 /* preview window */
+
 i.mirrorY(true);    // mirrors the Y in the preview plot
 
 i.draw();
 		
 /* export */
+
 i.exportCsv("c:/testdir/curve_output_isobands.csv");
 
 i.exportShp("c:/testdir/curve_output_isobands");  // avoid file extension; 3 files (.shp, .shx, .dbf) files will be created

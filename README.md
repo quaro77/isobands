@@ -21,7 +21,7 @@ x3;y2;value
 
 Draws the map in a preview window and exports in .CSV format with WKT geometry (ready for QGIS import) or in ESRI shapefile format.
 
-Example sage:
+Example usage:
 
 /* setup: */
 

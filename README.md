@@ -8,10 +8,15 @@ https://en.wikipedia.org/wiki/Marching_squares
 Supports reading from .CSV file in the format:
 
 x1;y1;value
+
 x2;y1;value
+
 x3;y1;value
+
 x1;y2;value
+
 x2;y2;value
+
 x3;y2;value
 
 Draws the map in a preview window and exports in .CSV format with WKT geometry (ready for QGIS import) or in ESRI shapefile format.

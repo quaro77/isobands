@@ -19,7 +19,9 @@ x2;y2;value
 
 x3;y2;value
 
-Draws the map in a preview window and exports in .CSV format with WKT geometry (ready for QGIS import) or in ESRI shapefile format.
+Draws the map in a preview window, with mouse selection, panning, zoom.
+
+Exports in .CSV format with WKT geometry (ready for QGIS import) or in ESRI shapefile format.
 
 Example usage:
 

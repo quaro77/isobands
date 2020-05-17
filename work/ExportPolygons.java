@@ -1,6 +1,5 @@
 package work;
 
-import java.awt.Polygon;
 import java.awt.geom.Area;
 import java.awt.geom.PathIterator;
 import java.io.BufferedWriter;
@@ -15,8 +14,8 @@ import java.util.Set;
 
 import shape.CreateDbf;
 import shape.CreateIndex;
+import shape.CreatePrj;
 import shape.CreateShp;
-import shape.ShapeUtil;
 
 public class ExportPolygons {
 
@@ -152,6 +151,9 @@ public class ExportPolygons {
 
 		CreateDbf cd = new CreateDbf();
 		cd.write(mapOut, filename);
+		
+		CreatePrj pj = new CreatePrj();
+		pj.write(filename, "4326");
 
 	}
 

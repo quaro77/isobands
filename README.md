@@ -19,6 +19,8 @@ x2;y2;value
 
 x3;y2;value
 
+The grid must be in rectangular form, with even spacing.
+
 Draws the map in a preview window, with mouse selection, panning, zoom.
 
 Exports in .CSV format with WKT geometry (ready for QGIS import) or in ESRI shapefile format.

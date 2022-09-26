@@ -125,6 +125,21 @@ public class Visual {
 							c1.getGreen() * (1 - ratio));
 					int blue = (int) (c2.getBlue() * ratio +
 							c1.getBlue() * (1 - ratio));
+					
+					if (red > 255) {
+						System.out.println("Warning: RED -> " + red);
+						red = 255;
+					}
+					if (green > 255) {
+						System.out.println("Warning: GREEN -> " + green);
+						green = 255;
+					}
+					if (blue > 255) {
+						System.out.println("Warning: BLUE -> " + blue);
+						blue = 255;
+					}
+					
+					
 					Color c = new Color(red, green, blue);
 					g2.setColor(c);
 					area = areaMap.get(k);

@@ -164,7 +164,11 @@ public class Isobands {
 		long startTime = System.currentTimeMillis();
 
 		if (this.maxLevel == 0.0) {
-			maxLevel = Math.ceil(maxPga);
+			if (step >= 1.0) {
+				maxLevel = Math.ceil(maxPga);
+			} else {
+				maxLevel = maxPga;
+			}
 		}
 
 		int nLevels = (int) Math.ceil((maxLevel - minLevel) / step) + 1;
@@ -246,7 +250,7 @@ public class Isobands {
 	public void exportCsv(String outputFile) {
 		ExportPolygons.exportCsv(areaMap, outputFile);
 	}
-	
+
 	public void exportShp(String outputFile) {
 		ExportPolygons.exportShp(areaMap, minX, minY, maxX, maxY, outputFile);
 	}
@@ -264,15 +268,15 @@ public class Isobands {
 		Isobands i = new Isobands();
 		i.setMinLevel(0.0);
 //		i.setMaxLevel(70.0);
-		i.setStep(1.0);
+		i.setStep(0.01);
 
-		i.readCsv("c:/testdir/curve_levels2.csv");
-		
+		i.readCsv("c:/testdir/myinputdata.txt");
+
 		i.calculateCurves();
 		i.mirrorY(true);
 		i.draw();
-		
-		i.exportShp("c:/testdir/curve_output_isobands_02");
+
+		i.exportShp("c:/testdir/myoutputshakemap");
 
 	}
 
